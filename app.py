@@ -9,8 +9,8 @@ from sklearn.preprocessing import StandardScaler
 app = Flask(__name__)
 LOG = create_logger(app)
 LOG.setLevel(logging.INFO)
-#Log the prediction
-logging.basicConfig(filename='kubenertes_out.txt',level=logging.DEBUG)
+#Log the prediction to kubernetes_out.txt we just change docker_out.txt into kubenertes.txt
+logging.basicConfig(filename='output_txt_files/docker_out.txt',level=logging.INFO)
 
 def scale(payload):
     """Scales Payload"""

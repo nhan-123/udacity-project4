@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+#PORT=8000
+#Node_port
 PORT=30039
 echo "Port: $PORT"
 
